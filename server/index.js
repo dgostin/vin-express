@@ -41,6 +41,10 @@ app.get("/api/:vin", async (req, res) => {
   res.send(data);
 });
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
