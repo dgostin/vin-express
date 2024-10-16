@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 const cors = require("cors");
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 const baseUrl = "https://vpic.nhtsa.dot.gov/api/vehicles/";
 
@@ -19,7 +19,7 @@ const cache = new NodeCache({ stdTTL: 600 }); // Cache items for 10 minutes (600
 
 // if (process.env.NODE_ENV === 'production') { console.log('In Production') }
 
-app.get("/:vin", async (req, res) => {
+app.get("/api/:vin", async (req, res) => {
   const vin = req.params.vin;
 
   // Fetch data
