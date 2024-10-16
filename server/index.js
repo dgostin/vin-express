@@ -126,3 +126,5 @@ async function addGroupName(data) {
 
   return data;
 }
+
+module.exports = app;
