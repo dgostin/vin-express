@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node api/index",
-    "install": "cd client && npm i",
+    "postinstall": "cd client && npm i",
     "client": "npm run dev --prefix client",
     "build": "npm run build --prefix client",
     "dev": "concurrently \"nodemon api/index.js\" \"npm run client\""
