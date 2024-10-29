@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import VinLookup from "./VinLookup";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -9,9 +9,7 @@ const App = () => {
     <>
       <Navbar />
       <Router>
-        <Routes>
-          <Route path="/" element={<VinLookup />} />
-        </Routes>
+        <VinLookup />
       </Router>
       <Footer />
     </>
