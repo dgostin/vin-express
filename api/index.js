@@ -1,23 +1,16 @@
 const express = require("express");
 const fetch = require("node-fetch");
-// const apicache = require('apicache')
 const NodeCache = require("node-cache");
 require("dotenv").config();
-// const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
 app.use(cors());
 
-// app.use(express.static(path.join(__dirname, "../client/dist")));
-
 const baseUrl = "https://vpic.nhtsa.dot.gov/api/vehicles/";
 
-// const cache = apicache.middleware
 const cache = new NodeCache({ stdTTL: 600 }); // Cache items for 10 minutes (600 seconds)
-
-// if (process.env.NODE_ENV === 'production') { console.log('In Production') }
 
 app.get("/api/:vin", async (req, res) => {
   const vin = req.params.vin;
@@ -40,10 +33,6 @@ app.get("/api/:vin", async (req, res) => {
 
   res.send(data);
 });
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
-// });
 
 // Start the server
 app.listen(port, () => {
