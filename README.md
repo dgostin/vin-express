@@ -10,8 +10,6 @@ VIN Express is a full stack web application that retrieves vehicle data based on
 - [Development](#development)
 - [Environment Variables](#environment-variables)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
