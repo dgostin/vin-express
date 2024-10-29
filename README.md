@@ -61,7 +61,7 @@ By default:
 
 ## Environment Variables
 
-VIN Express requires environment variables to configure the backend. Add the following to a `.env` file in the root directory:
+Environment variables are required to configure the backend. Add the following to a `.env` file in the root directory:
 
 ```env
 PORT=5000
@@ -73,8 +73,11 @@ Ensure the `target` port in `vite.config.js` matches the backend port.
 
 ## Deployment
 
-VIN Express is set up for deployment on [Vercel](https://vercel.com/):
+VIN Express is set up :
 
-1. **Deploy to Vercel:** When adding VIN Express as a new Vercel project, use default settings.
-2. **Set Output Directory:**
-   - Set **Output Directory** to `client/dist`, where Vite places the build output.
+There is a vercel.json in the root of the project for deployment on [Vercel](https://vercel.com/)
+
+**Deploy to Vercel:**
+When adding as a new Vercel project, use default settings with one excpetion:
+
+- Set **Output Directory** to `client/dist`, where Vite places the build output.

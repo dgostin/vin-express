@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 const cors = require("cors");
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "../client/dist")));
+// app.use(express.static(path.join(__dirname, "../client/dist")));
 
 const baseUrl = "https://vpic.nhtsa.dot.gov/api/vehicles/";
 
