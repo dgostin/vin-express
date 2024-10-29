@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 // const apicache = require('apicache')
 const NodeCache = require("node-cache");
 require("dotenv").config();
-const path = require("path");
+// const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 5000;
