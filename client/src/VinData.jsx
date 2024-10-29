@@ -1,9 +1,6 @@
 import React from "react";
 import DataTable from "./DataTable";
-import car from "./assets/car-sunset.jpg";
-import car1 from "./assets/car-sunset1.jpg";
 import SlateCard from "./SlateCard";
-import PrintLink from "./PrintLink";
 
 const VinData = ({ vin, groups, data }) => {
   const year = data.find((element) => element.Variable === "Model Year")?.Value;

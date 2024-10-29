@@ -43,14 +43,14 @@ async function fetchData(vin) {
   // Check if data is cached
   let data = cache.get(`vinData-${vin}`);
   if (data) {
-    console.log("Fetching VIN data from cache");
+    // console.log("Fetching VIN data from cache");
     return data;
   }
 
-  console.log("Fetching VIN data from API");
+  // console.log("Fetching VIN data from API");
   try {
     const url = `${baseUrl}decodevin/${vin}?format=json`;
-    console.log(url);
+    // console.log(url);
     const response = await fetch(url);
     data = await response.json();
     cache.set(`vinData-${vin}`, data);
@@ -86,10 +86,8 @@ async function addGroupName(data) {
   // Fetch variable to group mapping data
   let variableData = cache.get("variableData");
 
-  if (variableData) {
-    console.log("Fetching Variable data from cache");
-  } else {
-    console.log("Fetching Variable data from API");
+  if (!variableData) {
+    // console.log("Fetching Variable data from API");
     try {
       const url = `${baseUrl}getvehiclevariablelist?format=json`;
       const response = await fetch(url);
