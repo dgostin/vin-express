@@ -15,11 +15,6 @@ const VinLookup = () => {
   const [input, setInput] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
-  // const backendUrl =
-  //   process.env.NODE_ENV === "production"
-  //     ? "https://vin-express-backend.onrender.com"
-  //     : "http://localhost:3000";
-
   const fetchData = async (vin) => {
     // console.log(`Backend is ${backendUrl}`);
 
