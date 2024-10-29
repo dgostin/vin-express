@@ -1,7 +1,3 @@
-Here's a README template for **VIN Express** that you can use for your GitHub repository:
-
----
-
 # VIN Express
 
 VIN Express is a full stack web application that retrieves vehicle data based on Vehicle Identification Number (VIN) by leveraging the [NHTSA API](https://vpic.nhtsa.dot.gov/api/). The frontend is built with Vite and React, while the backend is a Node.js/Express server.
@@ -97,7 +93,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adjust any parts to better match your project setup or additional notes you want to include!
