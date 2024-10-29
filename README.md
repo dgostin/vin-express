@@ -33,8 +33,8 @@ To run VIN Express locally for development, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/VIN-Express.git
-   cd VIN-Express
+   git clone https://github.com/dgostin/vin-express.git
+   cd vin-express
    ```
 
 2. **Install Dependencies:**  
@@ -49,24 +49,17 @@ To run VIN Express locally for development, follow these steps:
 
 ## Development
 
-1. **Start Development Servers:**  
-   Run the development servers for both frontend and backend with:
+**Start Development Servers:**  
+ Run the development servers for both frontend and backend with:
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-   By default:
+By default:
 
-   - The backend runs on port `5000`
-   - The frontend proxies to the backend via the `server.proxy` setting in `vite.config.js`
-
-2. **Backend Port Configuration:**  
-   The backend port can be modified in `.env`:
-   ```env
-   PORT=5001
-   ```
-   Ensure the `target` port in `vite.config.js` matches the backend port.
+- The backend runs on port `5000`
+- The frontend proxies to the backend via the `server.proxy` setting in `vite.config.js`
 
 ## Environment Variables
 
@@ -77,6 +70,8 @@ PORT=5000
 ```
 
 > _Replace `5000` with your desired port if needed._
+
+Ensure the `target` port in `vite.config.js` matches the backend port.
 
 ## Deployment
 
