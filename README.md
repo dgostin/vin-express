@@ -1,6 +1,6 @@
 # VIN Express
 
-VIN Express is a full stack web application that retrieves vehicle data based on Vehicle Identification Number (VIN) by leveraging the [NHTSA API](https://vpic.nhtsa.dot.gov/api/). The frontend is built with Vite and React, while the backend is a Node.js/Express server.
+VIN Express is a full stack web application that retrieves vehicle data based on Vehicle Identification Number (VIN) by leveraging the NHTSA API (https://vpic.nhtsa.dot.gov/api/). The frontend is built with Vite and React, while the backend is a Node.js/Express server.
 
 ## Table of Contents
 
@@ -14,9 +14,9 @@ VIN Express is a full stack web application that retrieves vehicle data based on
 ## Features
 
 - Retrieve detailed vehicle information using VINs
-- Fast frontend setup with Vite
-- Efficient backend routing and API handling via Express
-- Proxy setup in Vite for smooth local development
+- Vite Frontend
+- Backend routing and API handling via Express
+- Proxy setup in Vite for local development
 
 ## Tech Stack
 
