@@ -85,11 +85,3 @@ VIN Express is set up for deployment on [Vercel](https://vercel.com/):
 1. **Deploy to Vercel:** When adding VIN Express as a new Vercel project, use default settings.
 2. **Set Output Directory:**
    - Set **Output Directory** to `client/dist`, where Vite places the build output.
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues/) for anything you'd like to work on or discuss.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
