@@ -73,11 +73,8 @@ Ensure the `target` port in `vite.config.js` matches the backend port.
 
 ## Deployment
 
-VIN Express is set up :
-
 There is a vercel.json in the root of the project for deployment on [Vercel](https://vercel.com/)
 
-**Deploy to Vercel:**
 When adding as a new Vercel project, use default settings with one excpetion:
 
 - Set **Output Directory** to `client/dist`, where Vite places the build output.
