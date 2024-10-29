@@ -77,4 +77,4 @@ There is a vercel.json in the root of the project for deployment on [Vercel](htt
 
 When adding as a new Vercel project, use default settings with one excpetion:
 
-- Set **Output Directory** to `client/dist`, where Vite places the build output.
+- Set **Output Directory** to `client/dist`. This is where Vite places the build output.
